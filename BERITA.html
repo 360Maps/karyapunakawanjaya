@@ -1,0 +1,247 @@
+<?php
+session_start();
+?>
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>KPJ - Update Informasi</title>
+<meta name="description" content="Update resmi dari PT Karya Punakawan Jaya - Kontraktor Umum dan developer perumahan">
+<meta name="keywords" content="kpj sidoarjo, karya punakawan, kontraktor sidoarjo">
+<meta name="generator" content="FA">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="logo kpj.png" rel="icon" sizes="230x230" type="image/png">
+<link href="logo kpj.png" rel="icon" sizes="230x230" type="image/png">
+<link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="fontawesome6.min.css" rel="stylesheet">
+<link href="Untitled3.css" rel="stylesheet">
+<link href="BERITA.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.conveyerbelt.min.js"></script>
+<script src="wwb19.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#headerLayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_headerLayoutGrid1').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#headerLayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_headerLayoutGrid2').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#headerLayoutGrid3']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_headerLayoutGrid3').offset().top }, 600, 'easeOutCirc');
+   });
+   $("#homeButton1").button({icon: 'ui-primary', iconPosition: 'beginning'});
+   $("a[href*='#faqLayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_faqLayoutGrid2').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#portfolioLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_portfolioLayoutGrid').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollportfolioLayoutGrid()
+   {
+      var $obj = $("#wb_portfolioLayoutGrid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollportfolioLayoutGrid();
+   $(window).scroll(function(event)
+   {
+      onScrollportfolioLayoutGrid();
+   });
+   $("#portfolioSlideShow").conveyerbelt({speed:3, spacing: 10});
+});
+</script>
+</head>
+<body class="wb-theme-content">
+<div id="wb_headerLayoutGrid1">
+<div id="headerLayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_headerIcon1" style="display:inline-block;width:20px;height:20px;text-align:center;z-index:0;">
+<div id="headerIcon1"><i class="fa fa-brands fa-facebook"></i></div>
+</div>
+<div id="wb_headerIcon2" style="display:inline-block;width:20px;height:20px;text-align:center;z-index:1;">
+<div id="headerIcon2"><i class="fa fa-brands fa-x-twitter"></i></div>
+</div>
+<div id="wb_headerIcon3" style="display:inline-block;width:20px;height:20px;text-align:center;z-index:2;">
+<div id="headerIcon3"><i class="fa fa-brands fa-instagram"></i></div>
+</div>
+<div id="wb_headerIcon4" style="display:inline-block;width:20px;height:20px;text-align:center;z-index:3;">
+<div id="headerIcon4"><i class="fa fa-brands fa-github"></i></div>
+</div>
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_headerLayoutGrid2">
+<div id="headerLayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_headerHeading" style="display:block;width:100%;z-index:4;">
+<h1 id="headerHeading">PT Karya Punakawan Jaya</h1>
+</div>
+<div id="wb_headerText2">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;">Kontraktor Umum dan Developer perumahan</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_headerLayoutGrid3">
+<div id="headerLayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_headerMenu" style="display:block;width:100%;z-index:6;vertical-align:top;">
+<ul id="headerMenu" itemscope itemtype="https://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="./index.html#homeLayoutGrid" title="BERANDA" itemprop="item"><i class="fa fa-home"></i><span itemprop="name">  BERANDA</span></a><meta itemprop="position" content="1" /></li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="./index.html#galleryFlexGrid" title="GALERI FOTO" itemprop="item"><i class="fa fa-regular fa-image"></i><span itemprop="name">  GALERI FOTO</span></a><meta itemprop="position" content="2" /></li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="./index.html#portfolioLayoutGrid" title="Portfolio" itemprop="item"><i class="fa fa-regular fa-file-image"></i><span itemprop="name">  PORTOFOLIO</span></a><meta itemprop="position" content="3" /></li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active" aria-current="page"><a href="#" itemprop="item"><i class="fa fa-regular fa-newspaper"></i><span itemprop="name">  BERITA</span></a><meta itemprop="position" content="4" /></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_homeLayoutGrid" class="wb-theme-content">
+<div id="homeLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_homeHeading" style="display:block;width:100%;z-index:7;">
+<h1 id="homeHeading" class="wb-theme-header">Informasi terbaru</h1>
+</div>
+<div id="wb_homeText" class="wb-theme-content">
+<p>Halaman ini menampilkan informasi terbaru dari PT Karya Punakawan Jaya</p>
+</div>
+<div id="wb_homeButton1" style="display:inline-block;width:159px;height:36px;z-index:9;">
+<a class="ui-button ui-corner-all wb-theme-button" id="homeButton1" href="" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>   Marketing</a>
+</div>
+<div id="wb_homeButton2" style="display:inline-block;width:213px;height:36px;z-index:10;">
+<a class="ui-button ui-corner-all" id="homeButton2" href="" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>   Layanan Pelanggan</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1" class="wb-theme-header">
+<section id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading1" style="display:block;width:100%;z-index:11;">
+<h1 id="Heading1" class="wb-theme-header">versi 1 - NAMA EVENT, MISAL PENGEMBALIAN DANA</h1>
+</div>
+<div id="wb_Heading2" style="display:block;width:100%;z-index:12;">
+<p id="Heading2" class="wb-theme-header">penjelasan tentang event ini, bawahnya berisi foto misal serah terima, pembayaran retur, dsb</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div id="wb_faqLayoutGrid2">
+<div id="faqLayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:13;">
+<img src="images/placeholder.png" id="Image1" alt="" class="wb-theme-content" width="291" height="192">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:14;">
+<img src="images/placeholder.png" id="Image2" alt="" class="wb-theme-content" width="291" height="192">
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:15;">
+<img src="images/placeholder.png" id="Image3" alt="" class="wb-theme-content" width="291" height="192">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4" class="wb-theme-header">
+<section id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading7" style="display:block;width:100%;z-index:16;">
+<h1 id="Heading7" class="wb-theme-header">Versi 2 - model slideshow</h1>
+</div>
+<div id="wb_Heading8" style="display:block;width:100%;z-index:17;">
+<p id="Heading8" class="wb-theme-header">penjelasan tentang event ini, bawahnya berisi foto misal serah terima, pembayaran retur, dsb</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div id="wb_portfolioLayoutGrid" class="wb-theme-content">
+<div id="portfolioLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<ul id="portfolioSlideShow" style="overflow:hidden;z-index:18;">
+<li><img class="image" width="800" height="528" src="images/placeholder.png" alt="" title=""></li>
+<li><img class="image" width="800" height="528" src="images/placeholder.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" width="800" height="528" src="images/placeholder.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" width="800" height="528" src="images/placeholder.png" style="display:none;" alt="" title=""></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer1" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:46px;height:46px;z-index:36;">
+<div id="wb_Icon1" style="position:absolute;left:9px;top:9px;width:28px;height:28px;text-align:center;z-index:19;">
+<a href="#"><div id="Icon1"><i class="fa fa-arrow-up"></i></div></a></div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="col-1">
+<div id="wb_footerHeading1" style="display:block;width:100%;z-index:20;">
+<h2 id="footerHeading1">KPJ - Kontraktor Umum</h2>
+</div>
+<div id="wb_footerText">
+<span style="color:#FFFFFF;font-family:Arial;font-size:15px;line-height:22px;">Alamat Kantor Starflos Gedangan<br>​<br>Senin - Sabtu 10.00 - 16.00 WIB</span>
+</div>
+<div id="wb_footerHeading2" style="display:block;width:100%;z-index:22;">
+<h3 id="footerHeading2">Follow Us</h3>
+</div>
+<div id="wb_footerIcon1" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:23;">
+<a href="./index.html"><div id="footerIcon1"><i class="fa fa-brands fa-x-twitter"></i></div></a>
+</div>
+<div id="wb_footerIcon2" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:24;">
+<a href="./index.html"><div id="footerIcon2"><i class="fa fa-brands fa-instagram"></i></div></a>
+</div>
+<div id="wb_footerIcon3" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:25;">
+<a href="./index.html"><div id="footerIcon3"><i class="fa fa-brands fa-facebook"></i></div></a>
+</div>
+<div id="wb_footerIcon4" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:26;">
+<a href="./index.html"><div id="footerIcon4"><i class="fa fa-brands fa-linkedin"></i></div></a>
+</div>
+<div id="wb_footerCopyrights">
+<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">© Copyright 2016 - 2024 Karya Punakawan Jaya</span>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
