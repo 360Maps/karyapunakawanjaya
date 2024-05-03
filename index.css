@@ -35,7 +35,7 @@ body
    --border-width: 1px;
    --color: #333333;
    --icon-color: #444444;
-   --colorize: invert(25%) sepia(0%) saturate(3125%) hue-rotate(140deg) brightness(93%) contrast(87%);
+   --colorize: invert(26%) sepia(1%) saturate(0%) hue-rotate(78deg) brightness(91%) contrast(87%);
 }
 .wb-theme-button, .wb-theme-static
 {
@@ -97,7 +97,7 @@ body
    --border-width: 1px;
    --color: #CCCCCC;
    --icon-color: #3370B7;
-   --colorize: invert(37%) sepia(64%) saturate(663%) hue-rotate(174deg) brightness(93%) contrast(87%);
+   --colorize: invert(38%) sepia(94%) saturate(395%) hue-rotate(170deg) brightness(89%) contrast(92%);
 }
 .darktheme .wb-theme-button, .darktheme .wb-theme-static
 {
@@ -159,7 +159,7 @@ body
    --border-width: 1px;
    --color: #333333;
    --icon-color: #444444;
-   --colorize: invert(23%) sepia(12%) saturate(17%) hue-rotate(343deg) brightness(101%) contrast(90%);
+   --colorize: invert(19%) sepia(0%) saturate(3356%) hue-rotate(197deg) brightness(96%) contrast(73%);
 }
 .ui-state-default
 {
@@ -221,7 +221,7 @@ body
    --border-width: 1px;
    --color: #CCCCCC;
    --icon-color: #3370B7;
-   --colorize: invert(36%) sepia(85%) saturate(600%) hue-rotate(178deg) brightness(89%) contrast(89%);
+   --colorize: invert(40%) sepia(41%) saturate(1095%) hue-rotate(175deg) brightness(89%) contrast(85%);
 }
 .darktheme .ui-state-default, .darktheme .wb-theme-static
 {
@@ -2656,17 +2656,17 @@ body
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
    grid-template-rows: auto auto auto auto;
    grid-template-areas:
-      "section1 section1 section2 section2 section3 section3 section4 section4 section5 section5"
-      "section1 section1 section6 section6 section6 section9 section9 section10 section10 section10"
+      "item-0 item-0 section2 section2 section3 section3 section4 section4 section5 section5"
+      "item-0 item-0 section6 section6 section6 section9 section9 section10 section10 section10"
       "section7 section7 section6 section6 section6 section12 section12 section11 section11 section11"
       "section8 section8 section8 section14 section14 section13 section13 section11 section11 section11";
 }
-#galleryFlexGrid .section1
+#galleryFlexGrid .item-0
 {
    display: flex;
-   grid-area: section1;
+   grid-area: item-0;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('images/0d909b40-e484-464a-bdbf-d031cac65652.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2720,7 +2720,7 @@ body
    display: flex;
    grid-area: section4;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('images/682d9f8c-d280-4faa-b035-7ec41c034d68.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2756,7 +2756,7 @@ body
    display: flex;
    grid-area: section6;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('images/29e19c1c-2090-407e-aed6-a1faf5de2b12.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2774,7 +2774,7 @@ body
    display: flex;
    grid-area: section9;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('images/682d9f8c-d280-4faa-b035-7ec41c034d68.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2792,7 +2792,7 @@ body
    display: flex;
    grid-area: section10;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('images/49dc3ecb-382e-4ce6-8311-b336ea846e63.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2846,7 +2846,7 @@ body
    display: flex;
    grid-area: section11;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('images/fe34d1d0-c8df-453a-86f7-ad30894df53e.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -3250,7 +3250,7 @@ body
    font-family: Arial;
    font-weight: 400;
    font-size: 13px;
-   line-height: 20px;
+   line-height: 16px;
 }
 #wb_portfolioText p, #wb_portfolioText ul
 {
