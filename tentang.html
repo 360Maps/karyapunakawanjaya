@@ -5,7 +5,7 @@ session_start();
 <html lang="id">
 <head>
 <meta charset="utf-8">
-<title>KPJ - Update Informasi</title>
+<title>Tentang Karya Punakawan Jaya</title>
 <meta name="description" content="Update resmi dari PT Karya Punakawan Jaya - Kontraktor Umum dan developer perumahan">
 <meta name="keywords" content="kpj sidoarjo, karya punakawan, kontraktor sidoarjo">
 <meta name="generator" content="FA">
@@ -18,13 +18,9 @@ session_start();
 <link href="tentang.css" rel="stylesheet">
 <script src="jquery-3.7.1.min.js"></script>
 <script src="jquery-ui.min.js"></script>
-<script src="wb.conveyerbelt.min.js"></script>
-<script src="wwb19.min.js"></script>
 <script>
 $(document).ready(function()
 {
-   $('#reviewsImage1').addClass('visibility-hidden');
-   $('#portfolio-image2').addClass('visibility-hidden');
    $("a[href*='#headerLayoutGrid1']").click(function(event)
    {
       event.preventDefault();
@@ -46,27 +42,16 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_faqLayoutGrid2').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#portfolioLayoutGrid']").click(function(event)
+   $("a[href*='#LayoutGrid3']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_portfolioLayoutGrid').offset().top-88 }, 600, 'easeOutCirc');
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 600, 'easeOutCirc');
    });
-   function onScrollportfolioLayoutGrid()
+   $("a[href*='#LayoutGrid5']").click(function(event)
    {
-      var $obj = $("#wb_portfolioLayoutGrid");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
-         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
-      }
-   }
-   onScrollportfolioLayoutGrid();
-   $(window).scroll(function(event)
-   {
-      onScrollportfolioLayoutGrid();
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid5').offset().top }, 600, 'easeOutCirc');
    });
-   $("#portfolioSlideShow").conveyerbelt({speed:3, spacing: 10});
 });
 </script>
 </head>
@@ -130,10 +115,10 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_homeHeading" style="display:block;width:100%;z-index:7;">
-<h1 id="homeHeading" class="wb-theme-header">Informasi terbaru</h1>
+<h1 id="homeHeading" class="wb-theme-header">Tentang PT Karya Punakawan Jaya</h1>
 </div>
 <div id="wb_homeText" class="wb-theme-content">
-<p>Halaman ini menampilkan informasi terbaru dari PT Karya Punakawan Jaya</p>
+<p>Legalitas Perusahaan</p>
 </div>
 <div id="wb_homeButton1" style="display:inline-block;width:159px;height:36px;z-index:9;">
 <a class="ui-button ui-corner-all wb-theme-button" id="homeButton1" href="" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>   Marketing</a>
@@ -150,10 +135,10 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Heading1" style="display:block;width:100%;z-index:11;">
-<h1 id="Heading1" class="wb-theme-header">versi 1 - NAMA EVENT, MISAL PENGEMBALIAN DANA</h1>
+<h1 id="Heading1" class="wb-theme-header">NOMOR INDUK BERUSAHA</h1>
 </div>
 <div id="wb_Heading2" style="display:block;width:100%;z-index:12;">
-<p id="Heading2" class="wb-theme-header">penjelasan tentang event ini, bawahnya berisi foto misal serah terima, pembayaran retur, dsb</p>
+<p id="Heading2" class="wb-theme-header">NIB 9120112081417</p>
 </div>
 </div>
 </div>
@@ -164,17 +149,36 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:13;">
-<img src="images/placeholder.png" id="Image1" alt="" class="wb-theme-content" width="291" height="192">
+<img src="images/web-nib.jpg" id="Image1" alt="" class="wb-theme-content" width="938" height="1327">
 </div>
 </div>
-<div class="col-2">
-<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:14;">
-<img src="images/placeholder.png" id="Image2" alt="" class="wb-theme-content" width="291" height="192">
 </div>
 </div>
-<div class="col-3">
-<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:15;">
-<img src="images/placeholder.png" id="Image3" alt="" class="wb-theme-content" width="291" height="192">
+</div>
+<div id="Layer1" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:46px;height:46px;z-index:35;">
+<div id="wb_Icon1" style="position:absolute;left:9px;top:9px;width:28px;height:28px;text-align:center;z-index:14;">
+<a href="#"><div id="Icon1"><i class="fa fa-arrow-up"></i></div></a></div>
+</div>
+<div id="wb_LayoutGrid2" class="wb-theme-header">
+<section id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading3" style="display:block;width:100%;z-index:15;">
+<h1 id="Heading3" class="wb-theme-header">AKTA PENDIRIAN PT</h1>
+</div>
+<div id="wb_Heading4" style="display:block;width:100%;z-index:16;">
+<p id="Heading4" class="wb-theme-header">-</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:17;">
+<img src="images/web-aktapendirian.jpg" id="Image2" alt="" class="wb-theme-content" width="938" height="1214">
 </div>
 </div>
 </div>
@@ -184,58 +188,49 @@ $(document).ready(function()
 <section id="LayoutGrid4">
 <div class="row">
 <div class="col-1">
-<div id="wb_Heading7" style="display:block;width:100%;z-index:16;">
-<h1 id="Heading7" class="wb-theme-header">Versi 2 - model slideshow</h1>
+<div id="wb_Heading5" style="display:block;width:100%;z-index:18;">
+<h1 id="Heading5" class="wb-theme-header">AKTA PENGESAHAN PT</h1>
 </div>
-<div id="wb_Heading8" style="display:block;width:100%;z-index:17;">
-<p id="Heading8" class="wb-theme-header">penjelasan tentang event ini, bawahnya berisi foto misal serah terima, pembayaran retur, dsb</p>
+<div id="wb_Heading6" style="display:block;width:100%;z-index:19;">
+<p id="Heading6" class="wb-theme-header">Kementerian Hukum dan HAM RI</p>
 </div>
 </div>
 </div>
 </section>
 </div>
-<div id="wb_portfolioLayoutGrid" class="wb-theme-content">
-<div id="portfolioLayoutGrid">
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
 <div class="row">
 <div class="col-1">
-<div class="col-1-padding">
-<ul id="portfolioSlideShow" style="overflow:hidden;z-index:18;">
-<li><img class="image" width="800" height="528" src="images/placeholder.png" alt="" title=""></li>
-<li><img class="image" width="800" height="528" src="images/placeholder.png" style="display:none;" alt="" title=""></li>
-<li><img class="image" width="800" height="528" src="images/placeholder.png" style="display:none;" alt="" title=""></li>
-<li><img class="image" width="800" height="528" src="images/placeholder.png" style="display:none;" alt="" title=""></li>
-</ul>
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:20;">
+<img src="images/web-pengesahan.jpg" id="Image3" alt="" class="wb-theme-content" width="938" height="1327">
 </div>
 </div>
 </div>
 </div>
-</div>
-<div id="Layer1" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:46px;height:46px;z-index:36;">
-<div id="wb_Icon1" style="position:absolute;left:9px;top:9px;width:28px;height:28px;text-align:center;z-index:19;">
-<a href="#"><div id="Icon1"><i class="fa fa-arrow-up"></i></div></a></div>
 </div>
 <div id="wb_footer">
 <div id="footer">
 <div class="col-1">
-<div id="wb_footerHeading1" style="display:block;width:100%;z-index:20;">
+<div id="wb_footerHeading1" style="display:block;width:100%;z-index:21;">
 <h2 id="footerHeading1">KPJ - Kontraktor Umum</h2>
 </div>
 <div id="wb_footerText">
 <span style="color:#FFFFFF;font-family:Arial;font-size:15px;line-height:22px;">Alamat Kantor Starflos Gedangan<br>​<br>Senin - Sabtu 10.00 - 16.00 WIB</span>
 </div>
-<div id="wb_footerHeading2" style="display:block;width:100%;z-index:22;">
+<div id="wb_footerHeading2" style="display:block;width:100%;z-index:23;">
 <h3 id="footerHeading2">Follow Us</h3>
 </div>
-<div id="wb_footerIcon1" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:23;">
+<div id="wb_footerIcon1" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:24;">
 <a href="./index.html"><div id="footerIcon1"><i class="fa fa-brands fa-x-twitter"></i></div></a>
 </div>
-<div id="wb_footerIcon2" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:24;">
+<div id="wb_footerIcon2" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:25;">
 <a href="./index.html"><div id="footerIcon2"><i class="fa fa-brands fa-instagram"></i></div></a>
 </div>
-<div id="wb_footerIcon3" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:25;">
+<div id="wb_footerIcon3" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:26;">
 <a href="./index.html"><div id="footerIcon3"><i class="fa fa-brands fa-facebook"></i></div></a>
 </div>
-<div id="wb_footerIcon4" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:26;">
+<div id="wb_footerIcon4" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:27;">
 <a href="./index.html"><div id="footerIcon4"><i class="fa fa-brands fa-linkedin"></i></div></a>
 </div>
 <div id="wb_footerCopyrights">
