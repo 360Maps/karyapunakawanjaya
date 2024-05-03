@@ -35,7 +35,7 @@ body
    --border-width: 1px;
    --color: #333333;
    --icon-color: #444444;
-   --colorize: invert(23%) sepia(10%) saturate(8%) hue-rotate(315deg) brightness(92%) contrast(83%);
+   --colorize: invert(23%) sepia(12%) saturate(12%) hue-rotate(317deg) brightness(100%) contrast(89%);
 }
 .wb-theme-button, .wb-theme-static
 {
@@ -97,7 +97,7 @@ body
    --border-width: 1px;
    --color: #CCCCCC;
    --icon-color: #3370B7;
-   --colorize: invert(35%) sepia(69%) saturate(485%) hue-rotate(171deg) brightness(102%) contrast(99%);
+   --colorize: invert(33%) sepia(89%) saturate(379%) hue-rotate(170deg) brightness(104%) contrast(100%);
 }
 .darktheme .wb-theme-button, .darktheme .wb-theme-static
 {
@@ -159,7 +159,7 @@ body
    --border-width: 1px;
    --color: #333333;
    --icon-color: #444444;
-   --colorize: invert(24%) sepia(8%) saturate(19%) hue-rotate(353deg) brightness(99%) contrast(89%);
+   --colorize: invert(21%) sepia(11%) saturate(12%) hue-rotate(320deg) brightness(96%) contrast(79%);
 }
 .ui-state-default
 {
@@ -221,7 +221,7 @@ body
    --border-width: 1px;
    --color: #CCCCCC;
    --icon-color: #3370B7;
-   --colorize: invert(50%) sepia(9%) saturate(3000%) hue-rotate(172deg) brightness(82%) contrast(110%);
+   --colorize: invert(40%) sepia(13%) saturate(3832%) hue-rotate(177deg) brightness(93%) contrast(82%);
 }
 .darktheme .ui-state-default, .darktheme .wb-theme-static
 {
@@ -989,7 +989,7 @@ body
 }
 #wb_homeImage
 {
-   margin: 50px 0 0 0 ;
+   margin: 20px 0 0 0 ;
    vertical-align: top;
 }
 #homeImage
@@ -1000,7 +1000,7 @@ body
    display: block;
    width: 100%;
    height: auto;
-   max-width: 250px;
+   max-width: 600px;
    margin-left: auto;
    margin-right: auto;
    vertical-align: top;
@@ -1225,9 +1225,9 @@ body
    max-width: 60px;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-end;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-end;
+   align-items: center;
    justify-content: center;
    text-align: center;
 }
@@ -1277,7 +1277,7 @@ body
    display: flex;
    flex-direction: column;
    box-sizing: border-box;
-   margin: 0;
+   margin: 0 0 10px 0 ;
 }
 #blogCard1{
    text-align: left;
@@ -1456,9 +1456,9 @@ body
    max-width: 60px;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-end;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-end;
+   align-items: center;
    justify-content: center;
    text-align: center;
 }
@@ -1508,7 +1508,7 @@ body
    display: flex;
    flex-direction: column;
    box-sizing: border-box;
-   margin: 0;
+   margin: 0 0 10px 0 ;
 }
 #blogCard2{
    text-align: left;
@@ -1687,9 +1687,9 @@ body
    max-width: 60px;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-end;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-end;
+   align-items: center;
    justify-content: center;
    text-align: center;
 }
@@ -1750,7 +1750,7 @@ body
    display: flex;
    flex-direction: column;
    box-sizing: border-box;
-   margin: 0;
+   margin: 0 0 10px 0 ;
 }
 #blogCard3{
    text-align: left;
@@ -1918,9 +1918,9 @@ body
    max-width: 60px;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-end;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-end;
+   align-items: center;
    justify-content: center;
    text-align: center;
 }
@@ -1970,7 +1970,7 @@ body
    display: flex;
    flex-direction: column;
    box-sizing: border-box;
-   margin: 0;
+   margin: 0 0 10px 0 ;
 }
 #blogCard4{
    text-align: left;
@@ -2684,7 +2684,7 @@ body
    display: flex;
    grid-area: section2;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('images/Gedangan 2 1103711f-c4ea-4080-b2c0-4fca1ede58b8.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2702,7 +2702,7 @@ body
    display: flex;
    grid-area: section3;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('images/Green PePe be0cd274-86bc-4fbb-9911-14ad480d00c5.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2720,7 +2720,7 @@ body
    display: flex;
    grid-area: section4;
    background-color: transparent;
-   background-image: url('images/682d9f8c-d280-4faa-b035-7ec41c034d68.jpg');
+   background-image: url('images/Green PePe cfed9008-1d52-40b8-96f0-c1c2d9342264.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2738,7 +2738,7 @@ body
    display: flex;
    grid-area: section5;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('images/Green PePe 6aaa0ea1-f3d5-4ab0-b7ca-7e1777444a74.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -5281,6 +5281,80 @@ body
    vertical-align: top;
    font-size: 16px;
    width: 16px;
+}
+#wb_Image1
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid transparent;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 383px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Image2
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image2
+{
+   border: 0px solid transparent;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 383px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Image3
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image3
+{
+   border: 0px solid transparent;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 383px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Image4
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image4
+{
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 383px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
 }
 #wb_footer
 {
