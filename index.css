@@ -7,10 +7,6 @@ body
    margin: 0;
    padding: 0;
 }
-.visibility-hidden
-{
-   visibility: hidden;
-}
 .wb-theme-header
 {
    background-color: #E9E9E9;
@@ -35,7 +31,7 @@ body
    --border-width: 1px;
    --color: #333333;
    --icon-color: #444444;
-   --colorize: invert(23%) sepia(12%) saturate(12%) hue-rotate(317deg) brightness(100%) contrast(89%);
+   --colorize: invert(25%) sepia(18%) saturate(5%) hue-rotate(45deg) brightness(99%) contrast(96%);
 }
 .wb-theme-button, .wb-theme-static
 {
@@ -97,7 +93,7 @@ body
    --border-width: 1px;
    --color: #CCCCCC;
    --icon-color: #3370B7;
-   --colorize: invert(33%) sepia(89%) saturate(379%) hue-rotate(170deg) brightness(104%) contrast(100%);
+   --colorize: invert(37%) sepia(64%) saturate(490%) hue-rotate(171deg) brightness(99%) contrast(104%);
 }
 .darktheme .wb-theme-button, .darktheme .wb-theme-static
 {
@@ -159,7 +155,7 @@ body
    --border-width: 1px;
    --color: #333333;
    --icon-color: #444444;
-   --colorize: invert(21%) sepia(11%) saturate(12%) hue-rotate(320deg) brightness(96%) contrast(79%);
+   --colorize: invert(25%) sepia(93%) saturate(12%) hue-rotate(11deg) brightness(90%) contrast(100%);
 }
 .ui-state-default
 {
@@ -221,7 +217,7 @@ body
    --border-width: 1px;
    --color: #CCCCCC;
    --icon-color: #3370B7;
-   --colorize: invert(40%) sepia(13%) saturate(3832%) hue-rotate(177deg) brightness(93%) contrast(82%);
+   --colorize: invert(38%) sepia(49%) saturate(632%) hue-rotate(171deg) brightness(98%) contrast(102%);
 }
 .darktheme .ui-state-default, .darktheme .wb-theme-static
 {
@@ -614,7 +610,7 @@ body
    display: inline-block;
    margin: 0;
    width: 389px;
-   height: 63px;
+   height: 23px;
 }
 #wb_headerLayoutGrid3
 {
@@ -2658,15 +2654,15 @@ body
    grid-template-areas:
       "item-0 item-0 section2 section2 section3 section3 section4 section4 section5 section5"
       "item-0 item-0 section6 section6 section6 section9 section9 section10 section10 section10"
-      "section7 section7 section6 section6 section6 section12 section12 section11 section11 section11"
-      "section8 section8 section8 section14 section14 section13 section13 section11 section11 section11";
+      "item-1 item-1 section6 section6 section6 section12 section12 section11 section11 section11"
+      "section8 section8 section8 section14 section14 item-2 item-2 section11 section11 section11";
 }
 #galleryFlexGrid .item-0
 {
    display: flex;
    grid-area: item-0;
    background-color: transparent;
-   background-image: url('images/0d909b40-e484-464a-bdbf-d031cac65652.jpg');
+   background-image: url('images/b968a2e8-1eb0-4852-baca-5d03366999b4.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2805,12 +2801,12 @@ body
    align-items: center;
    align-content: center;
 }
-#galleryFlexGrid .section7
+#galleryFlexGrid .item-1
 {
    display: flex;
-   grid-area: section7;
+   grid-area: item-1;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('WhatsApp Image 2024-05-03 at 1.04.48 PM.jpeg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2828,7 +2824,7 @@ body
    display: flex;
    grid-area: section12;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('WhatsApp Image 2024-05-03 at 12.15.39 PM.jpeg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2864,7 +2860,7 @@ body
    display: flex;
    grid-area: section8;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('images/Gedangan 2 1103711f-c4ea-4080-b2c0-4fca1ede58b8.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2882,7 +2878,7 @@ body
    display: flex;
    grid-area: section14;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('images/3638a369-4a16-42a5-9c4a-580d7562dff1.jpg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -2895,12 +2891,12 @@ body
    align-items: center;
    align-content: center;
 }
-#galleryFlexGrid .section13
+#galleryFlexGrid .item-2
 {
    display: flex;
-   grid-area: section13;
+   grid-area: item-2;
    background-color: transparent;
-   background-image: url('images/placeholder.png');
+   background-image: url('WhatsApp Image 2024-05-03 at 12.36.05 PM (1).jpeg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -3007,262 +3003,6 @@ body
    margin-left: auto;
    margin-right: auto;
    vertical-align: top;
-}
-#wb_LayoutGrid4
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   border: none !important;
-   box-sizing: border-box;
-   margin: 0;
-}
-#LayoutGrid4
-{
-   box-sizing: border-box;
-   padding: 50px 15px 50px 15px;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 1140px;
-}
-#LayoutGrid4 > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#LayoutGrid4 > .row > .col-1
-{
-   box-sizing: border-box;
-   font-size: 0;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#LayoutGrid4 > .row > .col-1
-{
-   float: left;
-}
-#LayoutGrid4 > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   width: 100%;
-   text-align: center;
-}
-#LayoutGrid4:before,
-#LayoutGrid4:after,
-#LayoutGrid4 .row:before,
-#LayoutGrid4 .row:after
-{
-   display: table;
-   content: " ";
-}
-#LayoutGrid4:after,
-#LayoutGrid4 .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid4 > .row > .col-1
-{
-   float: none;
-   width: 100% !important;
-}
-}
-#wb_Heading7
-{
-   border-radius: 0px;
-   box-sizing: border-box;
-   vertical-align: top;
-   margin: 0 0 25px 0 ;
-   padding: 0;
-   text-align: center;
-}
-#Heading7
-{
-   font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
-   font-size: 32px;
-   margin: 0;
-   text-align: center;
-   text-transform: none;
-}
-#Heading7
-{
-   height: 100%;
-   margin: 0;
-   width: 100%;
-   background: transparent !important;
-   border: none !important;
-}
-#wb_Heading8
-{
-   border-radius: 0px;
-   box-sizing: border-box;
-   vertical-align: top;
-   margin: 0 0 20px 0 ;
-   padding: 0;
-   text-align: center;
-}
-#Heading8
-{
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 15px;
-   margin: 0;
-   text-align: center;
-   text-transform: none;
-}
-#Heading8
-{
-   height: 100%;
-   margin: 0;
-   width: 100%;
-   background: transparent !important;
-   border: none !important;
-}
-#wb_portfolioLayoutGrid
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   border: none !important;
-   box-sizing: border-box;
-   margin: 0;
-}
-#portfolioLayoutGrid
-{
-   box-sizing: border-box;
-   padding: 50px 15px 50px 15px;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 1140px;
-}
-#portfolioLayoutGrid > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#portfolioLayoutGrid > .row > .col-1
-{
-   box-sizing: border-box;
-   font-size: 0;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#portfolioLayoutGrid > .row > .col-1
-{
-   float: left;
-}
-#portfolioLayoutGrid > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   width: 100%;
-   text-align: center;
-}
-#portfolioLayoutGrid > .row > .col-1 > .col-1-padding
-{
-   box-sizing: border-box;
-   width: 100%;
-   padding: 10px 0 10px 0;
-}
-#portfolioLayoutGrid:before,
-#portfolioLayoutGrid:after,
-#portfolioLayoutGrid .row:before,
-#portfolioLayoutGrid .row:after
-{
-   display: table;
-   content: " ";
-}
-#portfolioLayoutGrid:after,
-#portfolioLayoutGrid .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#portfolioLayoutGrid > .row > .col-1
-{
-   float: none;
-   width: 100% !important;
-}
-}
-#portfolioSlideShow .image
-{
-   border-width: 0;
-   border-radius: inherit;
-   display: block;
-   float: left;
-   height: 197px;
-   width: auto;
-}
-#portfolioSlideShow li
-{
-   border-radius: inherit;
-   position: absolute;
-   width: 100%;
-   left: 0;
-   top: 0;
-}
-#portfolioSlideShow
-{
-   display: inline-block;
-   position: relative;
-   list-style: none;
-   width: 100%;
-   height: 197px;
-   padding: 0;
-   margin: 0;
-}
-#portfolioSlideShow
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   box-sizing: border-box;
-}
-#wb_portfolioText 
-{
-   background: transparent !important;
-   border: none !important;
-   padding: 0;
-   margin: 0 0 50px 0 ;
-   text-align: left;
-}
-#wb_portfolioText
-{
-   font-family: Arial;
-   font-weight: 400;
-   font-size: 13px;
-   line-height: 16px;
-}
-#wb_portfolioText p, #wb_portfolioText ul
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_portfolioText
-{
-   display: block;
-   margin: 0 0 50px 0 ;
-   box-sizing: border-box;
-   width: 100%;
 }
 #wb_LayoutGrid5
 {
@@ -3562,92 +3302,6 @@ body
    font-style: normal;
    font-size: 13px;
    margin: 0;
-}
-#wb_servicesLayoutGrid2
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   border: none !important;
-   box-sizing: border-box;
-   margin: 0;
-}
-#servicesLayoutGrid2
-{
-   box-sizing: border-box;
-   padding: 0 15px 25px 15px;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 1140px;
-}
-#servicesLayoutGrid2 > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#servicesLayoutGrid2 > .row > .col-1, #servicesLayoutGrid2 > .row > .col-2, #servicesLayoutGrid2 > .row > .col-3
-{
-   box-sizing: border-box;
-   font-size: 0;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#servicesLayoutGrid2 > .row > .col-1, #servicesLayoutGrid2 > .row > .col-2, #servicesLayoutGrid2 > .row > .col-3
-{
-   float: left;
-}
-#servicesLayoutGrid2 > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   width: 33.33333333%;
-   text-align: center;
-}
-#servicesLayoutGrid2 > .row > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   width: 33.33333333%;
-   text-align: center;
-}
-#servicesLayoutGrid2 > .row > .col-3
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   width: 33.33333333%;
-   text-align: center;
-}
-#servicesLayoutGrid2:before,
-#servicesLayoutGrid2:after,
-#servicesLayoutGrid2 .row:before,
-#servicesLayoutGrid2 .row:after
-{
-   display: table;
-   content: " ";
-}
-#servicesLayoutGrid2:after,
-#servicesLayoutGrid2 .row:after
-{
-   clear: both;
-}
-@media (max-width: 768px)
-{
-#servicesLayoutGrid2 > .row > .col-1, #servicesLayoutGrid2 > .row > .col-2, #servicesLayoutGrid2 > .row > .col-3
-{
-   float: none;
-   width: 100% !important;
-}
 }
 #wb_LayoutGrid6
 {
@@ -4619,279 +4273,6 @@ body
    border: none;
 }
 #Card2-card-item2 h1
-{
-   color: inherit;
-   font-size: inherit;
-   font-weight: inherit;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 13px;
-   margin: 0;
-}
-#wb_Card3
-{
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   box-sizing: border-box;
-   margin: 0 0 25px 0 ;
-   text-align: center;
-   border: none !important;
-}
-#Card3-card-body
-{
-   padding: 20px 20px 20px 20px;
-   flex: 1 1 auto;
-   font-size: 0;
-}
-#Card3-card-item0
-{
-   box-sizing: border-box;
-   margin: 0 0 20px 0 ;
-   padding: 0;
-   background: transparent;
-   border: none;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 53px;
-   line-height: 53px;
-}
-#Card3-card-item0:hover
-{
-   transform: rotate(0deg) scale(1.5,1.5) ;
-   transition: transform 200ms linear 0ms;
-}
-#Card3-card-item0
-{
-   transform: rotate(0deg) ;
-   transition: transform 200ms linear 0ms;
-}
-#Card3-card-item0 a
-{
-   color: inherit;
-   text-decoration: none;
-}
-#Card3-card-item0 i
-{
-   color: var(--icon-color);
-   margin-left: 1px;
-   text-align: center;
-   vertical-align: top;
-   font-size: 53px;
-   width: 53px;
-}
-#Card3-card-item1
-{
-   box-sizing: border-box;
-   margin: 0 0 20px 0 ;
-   padding: 0;
-   background: transparent;
-   border: none;
-}
-#Card3-card-item1 h1
-{
-   color: inherit;
-   font-size: inherit;
-   font-weight: inherit;
-   font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
-   font-size: 21px;
-   margin: 0;
-}
-#Card3-card-item2
-{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   background: transparent;
-   border: none;
-}
-#Card3-card-item2 h1
-{
-   color: inherit;
-   font-size: inherit;
-   font-weight: inherit;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 13px;
-   margin: 0;
-}
-#wb_Card4
-{
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   box-sizing: border-box;
-   margin: 0 0 25px 0 ;
-   text-align: center;
-   border: none !important;
-}
-#Card4-card-body
-{
-   padding: 20px 20px 20px 20px;
-   flex: 1 1 auto;
-   font-size: 0;
-}
-#Card4-card-item0
-{
-   box-sizing: border-box;
-   margin: 0 0 20px 0 ;
-   padding: 0;
-   background: transparent;
-   border: none;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 53px;
-   line-height: 53px;
-}
-#Card4-card-item0:hover
-{
-   transform: rotate(0deg) scale(1.5,1.5) ;
-   transition: transform 200ms linear 0ms;
-}
-#Card4-card-item0
-{
-   transform: rotate(0deg) ;
-   transition: transform 200ms linear 0ms;
-}
-#Card4-card-item0 a
-{
-   color: inherit;
-   text-decoration: none;
-}
-#Card4-card-item0 i
-{
-   color: var(--icon-color);
-   margin-left: 1px;
-   text-align: center;
-   vertical-align: top;
-   font-size: 53px;
-   width: 53px;
-}
-#Card4-card-item1
-{
-   box-sizing: border-box;
-   margin: 0 0 20px 0 ;
-   padding: 0;
-   background: transparent;
-   border: none;
-}
-#Card4-card-item1 h1
-{
-   color: inherit;
-   font-size: inherit;
-   font-weight: inherit;
-   font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
-   font-size: 21px;
-   margin: 0;
-}
-#Card4-card-item2
-{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   background: transparent;
-   border: none;
-}
-#Card4-card-item2 h1
-{
-   color: inherit;
-   font-size: inherit;
-   font-weight: inherit;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 13px;
-   margin: 0;
-}
-#wb_Card5
-{
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   box-sizing: border-box;
-   margin: 0 0 25px 0 ;
-   text-align: center;
-   border: none !important;
-}
-#Card5-card-body
-{
-   padding: 20px 20px 20px 20px;
-   flex: 1 1 auto;
-   font-size: 0;
-}
-#Card5-card-item0
-{
-   box-sizing: border-box;
-   margin: 0 0 20px 0 ;
-   padding: 0;
-   background: transparent;
-   border: none;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 53px;
-   line-height: 53px;
-}
-#Card5-card-item0:hover
-{
-   transform: rotate(0deg) scale(1.5,1.5) ;
-   transition: transform 200ms linear 0ms;
-}
-#Card5-card-item0
-{
-   transform: rotate(0deg) ;
-   transition: transform 200ms linear 0ms;
-}
-#Card5-card-item0 a
-{
-   color: inherit;
-   text-decoration: none;
-}
-#Card5-card-item0 i
-{
-   color: var(--icon-color);
-   margin-left: 1px;
-   text-align: center;
-   vertical-align: top;
-   font-size: 53px;
-   width: 53px;
-}
-#Card5-card-item1
-{
-   box-sizing: border-box;
-   margin: 0 0 20px 0 ;
-   padding: 0;
-   background: transparent;
-   border: none;
-}
-#Card5-card-item1 h1
-{
-   color: inherit;
-   font-size: inherit;
-   font-weight: inherit;
-   font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
-   font-size: 21px;
-   margin: 0;
-}
-#Card5-card-item2
-{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   background: transparent;
-   border: none;
-}
-#Card5-card-item2 h1
 {
    color: inherit;
    font-size: inherit;
