@@ -35,7 +35,7 @@ body
    --border-width: 1px;
    --color: #383838;
    --icon-color: #D19405;
-   --colorize: invert(48%) sepia(99%) saturate(415%) hue-rotate(4deg) brightness(101%) contrast(99%);
+   --colorize: invert(67%) sepia(21%) saturate(6199%) hue-rotate(9deg) brightness(93%) contrast(96%);
 }
 .wb-theme-button, .wb-theme-static
 {
@@ -97,7 +97,7 @@ body
    --border-width: 1px;
    --color: #383838;
    --icon-color: #D19405;
-   --colorize: invert(73%) sepia(34%) saturate(6754%) hue-rotate(11deg) brightness(95%) contrast(96%);
+   --colorize: invert(66%) sepia(63%) saturate(1542%) hue-rotate(2deg) brightness(85%) contrast(96%);
 }
 .darktheme .wb-theme-button, .darktheme .wb-theme-static
 {
@@ -258,7 +258,7 @@ body
    padding: 0;
    text-align: center;
    -webkit-appearance: none;
-   margin: 0;
+   margin: 0 0 25px 0 ;
 }
 #Button1:focus
 {
@@ -301,6 +301,25 @@ body
    margin: 0;
    text-align: center;
    text-transform: none;
+}
+#Button2
+{
+   box-sizing: border-box;
+   line-height: 40px;
+   text-decoration: none;
+   vertical-align: top;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 19px;
+   padding: 0;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button2:focus
+{
+   outline: 0;
 }
 #wb_LayoutGrid1
 {
