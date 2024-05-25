@@ -35,7 +35,7 @@ body
    --border-width: 1px;
    --color: #383838;
    --icon-color: #D19405;
-   --colorize: invert(67%) sepia(21%) saturate(6199%) hue-rotate(9deg) brightness(93%) contrast(96%);
+   --colorize: invert(58%) sepia(29%) saturate(5059%) hue-rotate(16deg) brightness(101%) contrast(96%);
 }
 .wb-theme-button, .wb-theme-static
 {
@@ -97,7 +97,7 @@ body
    --border-width: 1px;
    --color: #383838;
    --icon-color: #D19405;
-   --colorize: invert(66%) sepia(63%) saturate(1542%) hue-rotate(2deg) brightness(85%) contrast(96%);
+   --colorize: invert(75%) sepia(46%) saturate(6443%) hue-rotate(14deg) brightness(96%) contrast(103%);
 }
 .darktheme .wb-theme-button, .darktheme .wb-theme-static
 {
@@ -315,7 +315,7 @@ body
    padding: 0;
    text-align: center;
    -webkit-appearance: none;
-   margin: 0;
+   margin: 0 0 10px 0 ;
 }
 #Button2:focus
 {
@@ -397,6 +397,63 @@ body
    float: none;
    width: 100% !important;
 }
+}
+#Button3
+{
+   box-sizing: border-box;
+   line-height: 40px;
+   text-decoration: none;
+   vertical-align: top;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 19px;
+   padding: 0;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0 0 10px 0 ;
+}
+#Button3:focus
+{
+   outline: 0;
+}
+#Button4
+{
+   box-sizing: border-box;
+   line-height: 40px;
+   text-decoration: none;
+   vertical-align: top;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 19px;
+   padding: 0;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0 0 10px 0 ;
+}
+#Button4:focus
+{
+   outline: 0;
+}
+#Button5
+{
+   box-sizing: border-box;
+   line-height: 40px;
+   text-decoration: none;
+   vertical-align: top;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 19px;
+   padding: 0;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button5:focus
+{
+   outline: 0;
 }
 #wb_ISI
 {
