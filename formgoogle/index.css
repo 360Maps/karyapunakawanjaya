@@ -35,7 +35,7 @@ body
    --border-width: 1px;
    --color: #383838;
    --icon-color: #D19405;
-   --colorize: invert(58%) sepia(29%) saturate(5059%) hue-rotate(16deg) brightness(101%) contrast(96%);
+   --colorize: invert(49%) sepia(83%) saturate(1264%) hue-rotate(16deg) brightness(101%) contrast(96%);
 }
 .wb-theme-button, .wb-theme-static
 {
@@ -97,7 +97,7 @@ body
    --border-width: 1px;
    --color: #383838;
    --icon-color: #D19405;
-   --colorize: invert(75%) sepia(46%) saturate(6443%) hue-rotate(14deg) brightness(96%) contrast(103%);
+   --colorize: invert(71%) sepia(13%) saturate(5767%) hue-rotate(3deg) brightness(86%) contrast(96%);
 }
 .darktheme .wb-theme-button, .darktheme .wb-theme-static
 {
@@ -454,6 +454,29 @@ body
 #Button5:focus
 {
    outline: 0;
+}
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin: 0;
+   padding: 10px 0 15px 0;
+   text-align: center;
+}
+#Heading2
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 32px;
+   margin: 0;
+   text-align: center;
+   text-transform: none;
 }
 #wb_ISI
 {
