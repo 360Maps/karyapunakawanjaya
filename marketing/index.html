@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="utf-8">
-<title>Untitled Page</title>
+<title>KPJ Marketing</title>
 <meta name="description" content="PT Karya Punakawan Jaya - Kontraktor Umum">
 <meta name="generator" content="WYSIWYG Web Builder 19 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +10,252 @@
 <link href="index.css" rel="stylesheet">
 <script src="jquery-3.7.1.min.js"></script>
 <script src="jquery.ui.effect.min.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css">
+<script src="fancybox/jquery.easing-1.3.pack.js"></script>
+<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 <script src="wwb19.min.js"></script>
 <script>
 $(document).ready(function()
 {
+   $('#Button2').addClass('visibility-hidden');
+   $('#Button3').addClass('visibility-hidden');
+   $('#Button4').addClass('visibility-hidden');
+   $('#Button5').addClass('visibility-hidden');
+   $('#Button6').addClass('visibility-hidden');
+   $('#wb_PhotoGallery1').addClass('visibility-hidden');
+   $('#wb_PhotoGallery2').addClass('visibility-hidden');
+   $('#wb_PhotoGallery3').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
    $('#reviewsImage1').addClass('visibility-hidden');
    $('#portfolio-image2').addClass('visibility-hidden');
    $("a[href*='#headerLayoutGrid']").click(function(event)
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_headerLayoutGrid').offset().top }, 600, 'easeOutCirc');
+   });
+   function onScrollButton2()
+   {
+      var $obj = $("#Button2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Button2', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Button2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Button2').inViewPort(true))
+   {
+      $('#Button2').addClass("in-viewport");
+   }
+   onScrollButton2();
+   $(window).scroll(function(event)
+   {
+      onScrollButton2();
+   });
+   function onScrollButton3()
+   {
+      var $obj = $("#Button3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Button3', 'slide-right-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Button3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Button3').inViewPort(true))
+   {
+      $('#Button3').addClass("in-viewport");
+   }
+   onScrollButton3();
+   $(window).scroll(function(event)
+   {
+      onScrollButton3();
+   });
+   function onScrollButton4()
+   {
+      var $obj = $("#Button4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Button4', 'slide-up-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Button4', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Button4').inViewPort(true))
+   {
+      $('#Button4').addClass("in-viewport");
+   }
+   onScrollButton4();
+   $(window).scroll(function(event)
+   {
+      onScrollButton4();
+   });
+   function onScrollButton5()
+   {
+      var $obj = $("#Button5");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Button5', 'slide-down-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Button5', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Button5').inViewPort(true))
+   {
+      $('#Button5').addClass("in-viewport");
+   }
+   onScrollButton5();
+   $(window).scroll(function(event)
+   {
+      onScrollButton5();
+   });
+   function onScrollButton6()
+   {
+      var $obj = $("#Button6");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Button6', 'slide-down-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Button6', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Button6').inViewPort(true))
+   {
+      $('#Button6').addClass("in-viewport");
+   }
+   onScrollButton6();
+   $(window).scroll(function(event)
+   {
+      onScrollButton6();
+   });
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   $("a[rel^='PhotoGallery1']").fancybox({});
+   function onScrollPhotoGallery1()
+   {
+      var $obj = $("#wb_PhotoGallery1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_PhotoGallery1', 'animate-fade-in-left', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_PhotoGallery1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_PhotoGallery1').inViewPort(true))
+   {
+      $('#wb_PhotoGallery1').addClass("in-viewport");
+   }
+   onScrollPhotoGallery1();
+   $(window).scroll(function(event)
+   {
+      onScrollPhotoGallery1();
+   });
+   $("a[data-rel='PhotoGallery2']").attr('rel', 'PhotoGallery2');
+   $("a[rel^='PhotoGallery2']").fancybox({});
+   function onScrollPhotoGallery2()
+   {
+      var $obj = $("#wb_PhotoGallery2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_PhotoGallery2', 'animate-fade-in-right', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_PhotoGallery2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_PhotoGallery2').inViewPort(true))
+   {
+      $('#wb_PhotoGallery2').addClass("in-viewport");
+   }
+   onScrollPhotoGallery2();
+   $(window).scroll(function(event)
+   {
+      onScrollPhotoGallery2();
+   });
+   $("a[data-rel='PhotoGallery3']").attr('rel', 'PhotoGallery3');
+   $("a[rel^='PhotoGallery3']").fancybox({});
+   function onScrollPhotoGallery3()
+   {
+      var $obj = $("#wb_PhotoGallery3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_PhotoGallery3', 'animate-fade-in-down', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_PhotoGallery3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_PhotoGallery3').inViewPort(true))
+   {
+      $('#wb_PhotoGallery3').addClass("in-viewport");
+   }
+   onScrollPhotoGallery3();
+   $(window).scroll(function(event)
+   {
+      onScrollPhotoGallery3();
+   });
+   $("a[href*='#LayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollLayoutGrid2()
+   {
+      var $obj = $("#wb_LayoutGrid2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollLayoutGrid2();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid2();
    });
    $("a[href*='#LayoutGrid1']").click(function(event)
    {
@@ -41,6 +277,46 @@ $(document).ready(function()
    {
       onScrollLayoutGrid1();
    });
+   $("a[href*='#LayoutGrid4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollLayoutGrid4()
+   {
+      var $obj = $("#wb_LayoutGrid4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollLayoutGrid4();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid4();
+   });
+   $("a[href*='#LayoutGrid3']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollLayoutGrid3()
+   {
+      var $obj = $("#wb_LayoutGrid3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollLayoutGrid3();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid3();
+   });
 });
 </script>
 </head>
@@ -54,26 +330,129 @@ $(document).ready(function()
 </div>
 </div>
 </div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading1" style="display:block;width:100%;z-index:1;">
+<h1 id="Heading1">DOKUMENTASI</h1>
+</div>
+<div id="wb_PhotoGallery1" style="display:block;width:100%;z-index:2;">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="bedugdowo (2).jpeg" data-rel="PhotoGallery1"><img alt="" src="tn_bedugdowo (2).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (9).jpeg" data-rel="PhotoGallery1"><img alt="" src="tn_bedugdowo (9).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (10).jpeg" data-rel="PhotoGallery1"><img alt="" src="tn_bedugdowo (10).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="bedugdowo (13).jpeg" data-rel="PhotoGallery1"><img alt="" src="tn_bedugdowo (13).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (14).jpeg" data-rel="PhotoGallery1"><img alt="" src="tn_bedugdowo (14).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (21).jpeg" data-rel="PhotoGallery1"><img alt="" src="tn_bedugdowo (21).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="bedugdowo (24).jpeg" data-rel="PhotoGallery1"><img alt="" src="tn_bedugdowo (24).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (25).jpeg" data-rel="PhotoGallery1"><img alt="" src="tn_bedugdowo (25).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (26).jpeg" data-rel="PhotoGallery1"><img alt="" src="tn_bedugdowo (26).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Heading2" style="display:block;width:100%;z-index:1;">
+<div id="wb_Heading2" style="display:block;width:100%;z-index:3;">
 <h1 id="Heading2">SITEPLAN BEDUGDOWO</h1>
 </div>
-<a id="Button2" href="https://docs.google.com/spreadsheets/d/1LRRdC7uFl-vfYYZ1kqEifkWHULzssosqXqs4DcBboB0/edit?usp=sharing" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:2;">TAHAP 1</a>
-<a id="Button3" href="https://docs.google.com/spreadsheets/d/1Nu0T5kRKe498QZao_9auy3FlC1XeDU26M_3PDXOLisc/edit?usp=sharing" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:3;">TAHAP 2</a>
-<a id="Button4" href="https://docs.google.com/spreadsheets/d/1NpPeW2y84lx7e_zVNJ_rDJkcXcmRAUcahvCf_Q7utB8/edit?usp=sharing" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:4;">TAHAP 3</a>
-<a id="Button5" href="https://docs.google.com/spreadsheets/d/1ATATzXDEtmPehd1b7N3_DjrrHWxVXIcI6D9O6--x860/edit?usp=sharing" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:5;">TAHAP 4</a>
-<div id="wb_Heading3" style="display:block;width:100%;z-index:6;">
+<a id="Button2" href="https://docs.google.com/spreadsheets/d/1LRRdC7uFl-vfYYZ1kqEifkWHULzssosqXqs4DcBboB0/edit?usp=sharing" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:4;">TAHAP 1</a>
+<a id="Button3" href="https://docs.google.com/spreadsheets/d/1Nu0T5kRKe498QZao_9auy3FlC1XeDU26M_3PDXOLisc/edit?usp=sharing" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:5;">TAHAP 2</a>
+<a id="Button4" href="https://docs.google.com/spreadsheets/d/1NpPeW2y84lx7e_zVNJ_rDJkcXcmRAUcahvCf_Q7utB8/edit?usp=sharing" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:6;">TAHAP 3</a>
+<a id="Button5" href="https://docs.google.com/spreadsheets/d/1ATATzXDEtmPehd1b7N3_DjrrHWxVXIcI6D9O6--x860/edit?usp=sharing" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:7;">TAHAP 4</a>
+<div id="wb_Heading3" style="display:block;width:100%;z-index:8;">
 <h1 id="Heading3">PRICELIST</h1>
 </div>
-<a id="Button6" href="https://docs.google.com/spreadsheets/d/1oEuhcJw7NujHTysPplxVFoGQup5EajPkr3ysFY5hb4c/edit?usp=sharing" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:7;">BEDUGDOWO</a>
-<div id="wb_Heading4" style="display:block;width:100%;z-index:8;">
-<h1 id="Heading4">BROSUR & DENAH</h1>
+<a id="Button6" href="https://docs.google.com/spreadsheets/d/1oEuhcJw7NujHTysPplxVFoGQup5EajPkr3ysFY5hb4c/edit?usp=sharing" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:9;">BEDUGDOWO</a>
 </div>
-<a id="Button7" href="./brosur A5.pdf" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:9;">PDF</a>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading4" style="display:block;width:100%;z-index:10;">
+<h1 id="Heading4">TAMPAK DEPAN</h1>
+</div>
+<div id="wb_PhotoGallery3" style="display:block;width:100%;z-index:11;">
+<div id="PhotoGallery3">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/36 fasat.jpg" data-rel="PhotoGallery3" title="Tipe 36"><img alt="" src="images/tn_36 fasat.jpg" class="image" title="Tipe 36" width="307" height="173"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/Ruko.jpg" data-rel="PhotoGallery3" title="Ruko"><img alt="" src="images/tn_Ruko.jpg" class="image" title="Ruko" width="307" height="404"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/42 fasat.jpg" data-rel="PhotoGallery3" title="Tipe 42"><img alt="" src="images/tn_42 fasat.jpg" class="image" title="Tipe 42" width="307" height="145"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading5" style="display:block;width:100%;z-index:12;">
+<h1 id="Heading5">DENAH</h1>
+</div>
+<div id="wb_PhotoGallery2" style="display:block;width:100%;z-index:13;">
+<div id="PhotoGallery2">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/36 denah.jpg" data-rel="PhotoGallery2"><img alt="" src="images/tn_36 denah.jpg" class="image" width="307" height="439"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/42 denah.jpg" data-rel="PhotoGallery2"><img alt="" src="images/tn_42 denah.jpg" class="image" width="307" height="439"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/ruko denah.jpg" data-rel="PhotoGallery2"><img alt="" src="images/tn_ruko denah.jpg" class="image" width="307" height="431"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+   </div>
+</div>
+</div>
 </div>
 </div>
 </div>
