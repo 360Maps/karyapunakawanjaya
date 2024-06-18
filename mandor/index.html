@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="description" content="PT Karya Punakawan Jaya - Kontraktor Umum">
+<meta name="generator" content="WYSIWYG Web Builder 19 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="FORM_Mandor.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wwb19.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#headerLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_headerLayoutGrid').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollLayoutGrid1()
+   {
+      var $obj = $("#wb_LayoutGrid1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollLayoutGrid1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid1();
+   });
+});
+</script>
+</head>
+<body class="wb-theme-content">
+<div id="wb_headerLayoutGrid">
+<div id="headerLayoutGrid">
+<div class="col-1">
+<div id="wb_Image1" style="display:inline-block;width:342px;height:129px;z-index:0;">
+<img src="images/logo KPJ2024.png" id="Image1" alt="" width="342" height="130">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading1" style="display:block;width:100%;z-index:1;">
+<h1 id="Heading1">OPERATOR</h1>
+</div>
+<a id="Button1" href="https://docs.google.com/forms/d/e/1FAIpQLSeVLV_SoG8A39U_QF3gyoqvgII32s_wEsev_6n-JedgweAI8Q/viewform" class="wb-theme-button" style="display:block;width: 100%;;height:42px;z-index:2;">INPUT DATA PEMBELIAN</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
