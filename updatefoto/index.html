@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>KPJ Marketing</title>
+<meta name="description" content="PT Karya Punakawan Jaya - Kontraktor Umum">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="FORM_Dokumentasi.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css">
+<script src="fancybox/jquery.easing-1.3.pack.js"></script>
+<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script src="wwb19.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_PhotoGallery1').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#headerLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_headerLayoutGrid').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   $("a[rel^='PhotoGallery1']").fancybox({});
+   function onScrollPhotoGallery1()
+   {
+      var $obj = $("#wb_PhotoGallery1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_PhotoGallery1', 'animate-fade-in-left', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_PhotoGallery1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_PhotoGallery1').inViewPort(true))
+   {
+      $('#wb_PhotoGallery1').addClass("in-viewport");
+   }
+   onScrollPhotoGallery1();
+   $(window).scroll(function(event)
+   {
+      onScrollPhotoGallery1();
+   });
+   $("a[href*='#LayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollLayoutGrid2()
+   {
+      var $obj = $("#wb_LayoutGrid2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollLayoutGrid2();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid2();
+   });
+});
+</script>
+</head>
+<body class="wb-theme-content">
+<div id="wb_headerLayoutGrid">
+<div id="headerLayoutGrid">
+<div class="col-1">
+<div id="wb_Image1" style="display:inline-block;width:342px;height:129px;z-index:0;">
+<img src="images/logo KPJ2024.png" id="Image1" alt="" width="342" height="130">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading1" style="display:block;width:100%;z-index:1;">
+<h1 id="Heading1">DOKUMENTASI</h1>
+</div>
+<div id="wb_PhotoGallery1" style="display:block;width:100%;z-index:2;">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="bedugdowo (2).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img0" src="tn_bedugdowo (2).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (9).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img1" src="tn_bedugdowo (9).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (10).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img2" src="tn_bedugdowo (10).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="bedugdowo (13).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img3" src="tn_bedugdowo (13).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (14).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img4" src="tn_bedugdowo (14).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (21).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img5" src="tn_bedugdowo (21).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="bedugdowo (24).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img6" src="tn_bedugdowo (24).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (25).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img7" src="tn_bedugdowo (25).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="bedugdowo (26).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img8" src="tn_bedugdowo (26).jpg" class="image" width="307" height="410"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="WhatsApp Image 2024-06-13 at 21.02.43.jpeg" data-rel="PhotoGallery1" title="Pembahasan pendanaan sertifikat SHM"><img alt="" id="PhotoGallery1_img9" src="tn_WhatsApp Image 2024-06-13 at 21.02.43.jpg" class="image" title="Pembahasan pendanaan sertifikat SHM" width="307" height="410"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="verifikasi dokumen BPN 10 Juli 2024 (1).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img10" src="tn_verifikasi dokumen BPN 10 Juli 2024 (1).jpg" class="image" width="307" height="545"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="verifikasi dokumen BPN 10 Juli 2024 (2).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img11" src="tn_verifikasi dokumen BPN 10 Juli 2024 (2).jpg" class="image" width="307" height="545"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="verifikasi dokumen BPN 10 Juli 2024 (3).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img12" src="tn_verifikasi dokumen BPN 10 Juli 2024 (3).jpg" class="image" width="307" height="173"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="verifikasi dokumen BPN 10 Juli 2024 (4).jpeg" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img13" src="tn_verifikasi dokumen BPN 10 Juli 2024 (4).jpg" class="image" width="307" height="546"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
